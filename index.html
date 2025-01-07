@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Meet Victor Suevo, a professional in IT and healthcare, seeking new opportunities.">
+	<meta name="keywords" content="Victor Suevo: Systems Analysis, Pharmacy, IT, Nursing, Maritime Rescue.">
+	<title>Resume - Victor Farias Suevo</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<script src="_javascript/funcoes.js"></script>
+	<link rel="stylesheet" href="_css/media.css"/>
+</head>
+<body>
+	
+<div id="interface">
+
+		<header id="cabecalho">
+		<hgroup>
+		<h1>Victor Farias Suevo</h1>
+		<h2>Systems Analyst, Pharmacist, and Nursing Technician</h2>
+		</hgroup>
+		<figure>
+				<img id="icone" src="_imagens/perfil.png"/>
+		</figure>
+		<nav id="menu">
+			<h1>Main menu</h1>
+			<ul type="disc">
+				<li onmouseover="mudaFoto ('_imagens/home1.png')"onmouseout="mudaFoto ('_imagens/perfil.png')"><a href="index.html" target="_self">Home</a></li>
+				<li onmouseover="mudaFoto ('_imagens/formacaoAcademica.png')"onmouseout="mudaFoto ('_imagens/perfil.png')"><a href="_html/fotos.html" target="_self">Education</a></li>
+				<li onmouseover="mudaFoto ('_imagens/ti.png')"onmouseout="mudaFoto ('_imagens/perfil.png')"><a href="_html/specs.html" target="_self">TI</a></li>
+				<li onmouseover="mudaFoto ('_imagens/MRCC.png')"onmouseout="mudaFoto ('_imagens/perfil.png')"><a href="_html/multimidia.html" target="_self">MRCC</a></li>
+			</ul>
+		</nav>
+		</header>
+<section id="corpo">
+	
+	  
+<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+<hgroup>
+<h3>Introduction > Me</h3>
+<h1>know a little bit about me</h1>
+<h2>by Victor Suevo</h2>
+<h3 class="direita">Updated on January 3, 2025</h3>
+</hgroup>
+	</header>
+<h2>About me</h2>
+	
+	<p><a href="https://www.facebook.com/?_rdc=2&_rdr" target="_blank"><b>Victor</b></a>, pharmacist and Nursing Technician with experience in maritime search and rescue. Passionate about technology, I am currently studying Systems Analysis and Development and seeking opportunities to apply my knowledge in IT and healthcare.</p>
+  </P>
+<figure class="foto-legenda">
+<img src="_imagens/minhaFoto.jpeg"/>
+<figcaption>
+		<h1>Victor Suevo</h1>
+		<p id="intro" > With a passion for technology and dedication to studying IT, I am determined to reach new heights at the intersection of IT and healthcare, contributing to a more innovative and healthy future.</p>
+		</figcaption>
+</figure>
+
+<h2>Skills</h2>
+<table id="tabelaspec">
+	<caption>Table of skills <span>Jan/2025</span></caption>
+
+	<tr><td class="ce">MRCC</td>  <td class="cd">Management of maritime rescue operations</td></tr>
+	<tr><td rowspan="2" class="ce">IT</td> <td class="cd">Creation using HTML and CSS</td></tr>
+	<tr><td class="cd">Programming in Python and JavaScript</td></tr>
+	<tr><td class="ce">Administrator</td>  <td class="cd">Administrative work in financial execution (bidding and contracts)</td></tr>
+</table>
+<h2>Completed Projects</h2>
+	<h3 id="h3">Created a scheduling control system for a pediatric clinic</h3>
+	<p>The scheduling control system developed in collaboration with the <a href="https://www.doctoralia.com.br/fabiana-bortolini/generalista/rio-grande" target="_blank">Burtolini Pediatric Clinic</a> includes several essential features designed to streamline appointment management and enhance patient care. The code, written in Python with SQLite as the database, is structured to address the clinic's specific needs effectively. Here's an overview of its features and functionality:<br/>
+
+		1. <b>Appointment Scheduling</b>: The system enables precise scheduling of appointments, preventing overlapping time slots. It supports emergency bookings that bypass the standard 30-minute interval restriction, ensuring flexibility during critical situations.<br/>
+		
+		2. <b>Patient Registration</b>: New patients can be registered effortlessly while avoiding data duplication, such as duplicate CPF entries. This ensures accurate and organized patient records.<br/>
+		
+		3. <b>Edit and Cancel Appointments</b>: Users can edit, cancel, or reschedule appointments directly through the interface, offering adaptability for last-minute changes.<br/>
+		
+		4. <b>Time Interval Control</b>: For non-emergency cases, the system enforces a 30-minute gap between appointments. This rule is overridden for emergency bookings to prioritize urgent care.<br/>
+		
+		5. <b>Appointment Display</b>: A user-friendly interface displays scheduled appointments clearly, with options to edit or cancel directly from the list.<br/>
+		
+		6. <b>Report Generation</b>: The system can generate CSV reports for administrative purposes, such as financial tracking and patient flow analysis.<br/>
+		
+		<p><strong> Implementation:</strong><br/><br>
+			
+	
+		- <b>Database Management with SQLite</b>: The system uses SQLite for local data storage, handling patient and appointment information. Its simplicity eliminates the need for a complex database server while ensuring reliable data management.<br/>
+		
+		- <b>Table Structure</b>: 
+		- Patients: Stores patient details like name, CPF, and age, with validation to prevent duplicate records.<br/>
+		- <b>Appointments</b>: Records appointment details, including date, time, patient, and type (regular or emergency), ensuring no schedule conflicts.<br/>
+		
+		- <b>Graphical User Interface (GUI)</b>: Built using Tkinter, the interface is designed for simplicity and ease of use. Key components include:
+		- Buttons for scheduling, editing, and canceling appointments, placed intuitively for quick access.
+		- A Listbox to display scheduled appointments, allowing edits or cancellations directly.
+		- Input fields for patient and appointment details, with validations to prevent errors or redundancies.<br/>
+		
+		- <b>Validation and Scheduling Logic</b>: The code validates appointment timings, ensuring they comply with interval rules unless marked as an emergency. Any scheduling conflicts are flagged for user correction.<br/>
+		
+		- <b>Editing and Canceling Appointments</b>: Users can seamlessly modify appointment details or remove bookings when necessary, streamlining administrative tasks.<br/>
+		
+		- <b>Report Export Functionality</b>: CSV report generation simplifies administrative workflows by providing insights into patient flow, financial data, and operational efficiency.<br/>
+		
+		- <b>Scalability and Maintenance</b>: Designed with adaptability in mind, the code can accommodate future enhancements, such as system integration, automated reminders, or expansion to multiple clinic branches.<br/>
+		
+		This system is designed to optimize the clinic’s workflow, reduce human error, and ensure a more organized and patient-focused environment. It allows the administrative and medical staff to concentrate on delivering quality care rather than dealing with logistical challenges.</p> <p>Click <a href="https://github.com/victorsuevo/Consulta" target="_blank">here</a> for more.</p>
+
+
+<h2>My Future Ambitions</h2>
+	<p>My professional goal is to specialize in the field of Information Technology (IT) and contribute significantly to large projects. I have a deep interest in understanding and mastering the multiple facets of IT, from software development to cybersecurity, including network administration and data management.</p>
+
+	<p>I believe that specialization is fundamental to achieving excellence, and therefore, I intend to invest continuously in my education and training. My objective is to obtain recognized certifications and stay updated with the latest technological trends and innovations. I want to be a professional who not only understands technology but also knows how to apply it efficiently to solve complex problems and create innovative solutions.</p>
+		
+	<p>In addition to technical skills, I have developed strong communication abilities, which allow me to collaborate effectively with colleagues and clients. I am someone with great problem-solving skills, always seeking to understand underlying needs to provide appropriate solutions.</p>
+		
+	<p>My ability to work in a team is one of my main strengths. I value the diversity of thoughts and ideas that each member can bring to the group. Additionally, my resilience and adaptability allow me to handle challenges positively and maintain motivation even in difficult situations.</p>
+		
+	<p>I am determined to build a solid career in Information Technology, where I can apply my skills and knowledge to make a difference. I am excited about the prospect of contributing to significant projects that can have a positive impact on the world. With dedication, continuous learning, and a collaborative approach, I am confident that I can achieve my goals and become a standout professional in the IT field.</p>
+
+		<div id="video-superior">
+		<video id="filme-superior" controls="controls" poster="_imagens/video-mini01.jpg">
+			<source src="_media/Apresentation.mp4" type="video/mp4"/>
+			Sorry, the video could not be loaded.
+		</video>
+		<p>English version</p>
+		</div>
+		<div id="video-superior2">
+			<video id="filme-superior" controls="controls" poster="_imagens/video-mini01.jpg">
+				<source src="_media/ApresentationFR.mp4" type="video/mp4"/>
+				Sorry, the video could not be loaded.
+			</video>
+			<p>French version</p>
+			</div>
+</article>
+</section>
+<aside id="lateral">
+<h1>MRCC</h1>
+<h2>Helping to save lives</h2>
+
+		<div id="video-inferior">
+		<video id="filme-inferior" controls="controls" poster="_imagens/video-mini03.jpg">
+			<source src="_media/salvamarBrasil.mp4" type="video/mp4"/>
+			Sorry, the video could not be loaded.
+		</video>
+		</div>
+
+<p>The <strong>SALVAMAR Sueste</strong> is part of the <b>1st Naval District Command</b> , located in <b>Rio de Janeiro</b>, Brazil. It is responsible for coordinating maritime search and rescue operations in the southeastern region of the country. As part of the Brazilian Search and Rescue System (SAR), it operates under the coordination of the <strong>Brazilian Navy</strong>.
+
+	<strong>Main Responsibilities of SALVAMAR Sueste:</strong>
+	
+	1. <strong>Coordination of Search and Rescue Operations</strong>:  
+	   - Responds to maritime emergencies, such as drifting vessels, shipwrecks, missing crews, and accidents involving aircraft over the sea.  
+	   - Mobilizes maritime, aerial, and ground resources to locate and rescue people in distress within its area of responsibility.
+	
+	2. <strong>Area of Operation</strong>:  
+	   - Covers the southeastern coastal region, including the states of <b>Rio de Janeiro</b>, <b>Espírito Santo</b>, and part of <b>São Paulo</b>.  
+	   - This area includes heavily trafficked maritime routes, requiring constant monitoring and preparedness.
+	
+	3. <strong>Receiving and Responding to Distress Signals</strong>:  
+	   - Serves as a hub for receiving emergency messages transmitted through maritime radios and satellite communication systems, such as EPIRBs and GMDSS.  
+	   - Organizes and executes prompt responses to mitigate the impact of incidents.
+	
+	4. <strong>National and International Collaboration</strong>:  
+	   - Works in partnership with other Brazilian Navy units, international search and rescue organizations, and private navigation companies.  
+	   - Coordinates efforts with neighboring states and multinational organizations, especially given its jurisdiction includes globally significant shipping routes.
+	
+	5. <strong>Education and Prevention</strong>:  
+	   - Conducts awareness campaigns on maritime safety for fishermen, sailors, and recreational boaters.  
+	   - Organizes training exercises and simulations to prepare teams and ensure operational efficiency.
+	
+	<strong>Strategic Importance</strong>:
+	SALVAMAR Sueste plays a crucial role in ensuring the safety of navigation and protecting lives at sea, particularly in a region with intense maritime activity and globally significant trade routes. Its operations adhere to international standards set by the **SAR Convention** and other maritime treaties.
+	
+	The SALVAMAR Sueste’s mission is essential for Brazil's maritime security and its commitment to international obligations.</p>
+</aside>
+<footer id="rodape">
+<p>&copy;Copyright 2024 - by Victor Suevo<br/>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+<a href="https://web.facebook.com/?_rdc=1&_rdr#"target="blank">Facebook</a> &nbsp; | &nbsp; 
+<a href="https://x.com/suevo222"target="blank">X</a> &nbsp; | &nbsp; 
+<a href="https://www.linkedin.com/feed/?trk=sem-ga_campid.12619604099_asid.149519181115_crid.657343811719_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.1001686"target="blank">LinkedIn</a> &nbsp;  | &nbsp; 
+<a href="https://www.instagram.com/suevo222/"target="blank">Instagram</a>  &nbsp;  | &nbsp; 
+<a href="https://github.com/victorsuevo"target="blank">GitHub</a> 
+</p> 
+</footer>
+</div>
+</body>
+</html>
