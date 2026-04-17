@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title data-translate="Trajectory">Trajectory</title>
+	<script>
+		// Função para carregar o arquivo JSON
+		async function loadTranslations() {
+		  const response = await fetch('translations.json');
+		  const translations = await response.json();
+		  return translations;
+		}
+	  
+		// Função para traduzir o conteúdo do site
+		async function translateContent(language) {
+		  const translations = await loadTranslations();
+	  
+		  const elements = document.querySelectorAll('[data-translate]');
+		  elements.forEach((element) => {
+			const key = element.getAttribute('data-translate');
+			element.textContent = translations[language][key];
+		  });
+		}
+	  
+		// Receber mensagens do iframe pai
+		window.addEventListener('message', (event) => {
+		  if (event.data === 'en' || event.data === 'fr') {
+			translateContent(event.data);
+		  }
+		});
+	  </script>
+	  
+	<style>
+		 body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15pt;
+		 }
+		 p{
+			text-align: justify;
+			text-indent: 20px;
+		 }
+		 article h1{
+			font-size: 16pt;
+			color: white;
+			background-color: rgba(0,0,0,.3);
+			padding: 5px;
+			margin: 0px;
+		 }
+		 article h2{
+			font-size: 15pt;
+			color: #888888;
+			margin: 0px;
+		 }
+		 article{
+			margin-bottom: 800px;
+		 }
+	</style>
+</head>
+<body>
+	<article id="topo">
+		<header>
+			<h2 data-translate="Click">Click on the Checkpoints to learn more about the journey</h2>
+		</header>
+		<img src="../_imagens/maosEsquerda.png" alt="Mao apontando para a esquerda">
+	</article>
+
+<article id="university">
+	<header>
+		<h1 data-translate="unive">University (January 2005 to May 2012)</h1>
+	</header>
+	<p data-translate="pharmacy">My journey in the pharmacy university was filled with challenges and achievements. Navigating the distance and the dangers, required a lot of perseverance. However, all these difficulties were rewarded when I discovered my passion for pharmacodynamics and pharmaceutics. These subjects not only ignited my deep interest in how medications work in the human body but also provided the theoretical and practical foundation necessary for my education. Finally, receiving the long-awaited diploma brought an indescribable sense of accomplishment, crowning all the efforts and challenging moments I experienced along the way.</p>
+</article>
+
+<article id="english">
+	<header>
+		<h1 data-translate="ingles">English (January 2005 to December 2009, and it continues)</h1>
+	</header>
+	<p data-translate="ingesielts">Studying English has been a significant part of my journey. My dedication led me to achieve a B1 level on the IELTS exam in 2016, which was a proud milestone. Since then, I have been continuously studying, striving to improve my language skills further. The ongoing learning process keeps me engaged and excited about mastering English.</p>
+</article>
+
+<article id="nursing">
+	<header><h1 data-translate="enfermagem">Nursing Technician (January 2016 to December 2017)</h1>
+	</header>
+	<p data-translate="joranadadeenfermagem">My journey in the Nursing Technician course was marked by constant challenges. Just like in college, reaching the course location involved facing difficulties and dangers. However, my determination led me to overcome these obstacles. During hospital internships, I was able to put all the theoretical learning into practice, facing real-life situations that enriched my knowledge and skills. Each shift, each patient attended, contributed to my professional development and prepared me for future challenges in the healthcare field.</p>
+</article>
+
+<article id="french">
+	<header>
+		<h1 data-translate="frances">French (January 2005 to December 2016, and it continues)</h1>
+	</header>
+	<p data-translate="jornadadefrances">Learning French has been a deeply enriching journey. This experience has refined my linguistic skills. Each lesson offered the chance to expand my vocabulary, improve my pronunciation, and gain a deeper understanding of French grammar. In 2025, I decided to resume my studies with private lessons, further reinforcing my dedication and passion for continuous learning of French. This journey, although challenging, has been extremely rewarding and continues to inspire me.</p>
+</article>
+
+<article id="systems">
+	<header>
+		<h1 data-translate="ads">Systems Analysis and Development (July 2022 to present)</h1>
+	</header>
+	<p data-translate="jornadadeads">Studying Systems Analysis and Development has been a transformative discovery. I found my true vocation in the IT field, where I intend to specialize more and more. The studies are so enjoyable that time seems to fly by without me noticing. So far, I have acquired valuable skills in programming, software development, data analysis, and solving complex problems. My intention is to enter the job market as soon as possible, seizing any opportunities given to me to apply my knowledge and continue to grow professionally.</p>
+</article>
+</body>
+</html>

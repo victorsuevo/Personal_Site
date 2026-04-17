@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Meet Victor Suevo, a professional in IT and healthcare, seeking new opportunities.">
+	<meta name="keywords" content="Victor Suevo: Systems Analysis, Pharmacy, IT, Nursing, Maritime Rescue.">
+	<title data-translate="curriculumspecs">Trajectory - Victor Farias Suevo</title>
+	
+	<!-- Modern Typography -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../_css/estilo.css"/>
+	<link rel="stylesheet" href="../_css/specs.css"/>
+	<script src="../_javascript/funcoes.js" defer></script>
+	<style>
+		.icon {
+		  position: absolute;
+		  display: none;
+		  width: 100px;
+		  height: 100px;
+		  pointer-events: none;
+		}
+	</style>
+</head>
+<body>
+	
+<div id="interface">
+
+	<header id="cabecalho">
+		<div class="logo-container">
+			<h1>Victor Farias Suevo</h1>
+			<h2 data-translate="introdspecs">Systems Analyst, Pharmacist, and Nursing Technician</h2>
+		</div>
+		
+		<nav id="menu">
+			<ul>
+				<li><a href="../index.html" target="_self" data-translate="casaspecs">Home</a></li>
+				<li><a href="fotos.html" target="_self" data-translate="educacaospecs">Education</a></li>
+				<li class="active"><a href="specs.html" target="_self" data-translate="tecnologiaspecs">IT</a></li>
+				<li><a href="multimidia.html" target="_self" data-translate="salvamarspecs">MRCC</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+	<main class="main-content" style="grid-template-columns: 1fr;">
+		<section id="corpo-full">
+			<article id="noticia-principal" class="card">
+				<header id="cabecalho-artigo">
+					<p class="section-tag">Path</p>
+					<h1 data-translate="trajeto">Trajectory</h1>
+					<div class="article-meta">
+						<h2>By Victor Suevo</h2>
+						<span class="date" data-translate="atualizacaospecs">Updated on Jan 6, 2025</span>
+					</div>
+				</header>
+
+				<div class="trajectory-layout" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin: 2rem 0;">
+					<div class="trajectory-left" style="flex: 1; min-width: 300px;">
+						<p data-translate="clickspecs" style="margin-bottom: 1rem;">Click on any checkpoint in the image to learn more about my journey so far. Any point will take you to a place full of new information.</p>
+						<img src="../_imagens/trajetoria.jpeg" usemap="#meumapa" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 100%; height: auto; display: block;"/>
+						<map name="meumapa">
+							<area shape="circle" coords="449,390,38" href="trajetoria.html#university" target="janela" onmouseover="showIcon(event, 'icon1')" onmouseout="hideIcon('icon1')"/>
+							<area shape="circle" coords="194,282,28" href="trajetoria.html#english" target="janela" onmouseover="showIcon(event, 'icon2')" onmouseout="hideIcon('icon2')"/>
+							<area shape="circle" coords="395,171,17" href="trajetoria.html#nursing" target="janela" onmouseover="showIcon(event, 'icon3')" onmouseout="hideIcon('icon3')"/>
+							<area shape="circle" coords="246,104,15" href="trajetoria.html#french" target="janela" onmouseover="showIcon(event, 'icon4')" onmouseout="hideIcon('icon4')"/>
+							<area shape="circle" coords="358,72,10" href="trajetoria.html#systems" target="janela" onmouseover="showIcon(event, 'icon5')" onmouseout="hideIcon('icon5')"/>
+						</map>
+					</div>
+					
+					<div class="trajectory-right" style="flex: 1; min-width: 300px; border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); background: rgba(255,255,255,0.02);">
+						<iframe src="trajetoria.html" name="janela" id="frame-spec" scrolling="no" style="width: 100%; height: 500px; border: none; display: block;"></iframe>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<footer id="rodape">
+		<div class="footer-content">
+			<p>&copy; 2024 by Victor Suevo</p>
+			<div class="social-links">
+				<a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank">Facebook</a>
+				<a href="https://x.com/suevo222" target="_blank">X</a>
+				<a href="https://www.linkedin.com/in/victor-suevo" target="_blank">LinkedIn</a>
+				<a href="https://www.instagram.com/suevo222/" target="_blank">Instagram</a>
+				<a href="https://github.com/victorsuevo" target="_blank">GitHub</a>
+			</div>
+		</div>
+	</footer>
+</div>
+<img src="../_imagens/icon1.png" id="icon1" class="icon" style="z-index: 9999;" />
+<img src="../_imagens/icon2.png" id="icon2" class="icon" style="z-index: 9999;" />
+<img src="../_imagens/icon3.png" id="icon3" class="icon" style="z-index: 9999;" />
+<img src="../_imagens/icon4.png" id="icon4" class="icon" style="z-index: 9999;" />
+<img src="../_imagens/icon5.png" id="icon5" class="icon" style="z-index: 9999;" />
+</body>
+</html>

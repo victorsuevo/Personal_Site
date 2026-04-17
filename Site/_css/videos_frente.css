@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+video#filme-superior {
+	display: block;
+	position: relative;
+	left: 90px;
+	top: 85px;
+	width: 440px;
+}
+
+video#filme-inferior {
+	display: block;
+	position: relative;
+	left: 90px;
+	top: 85px;
+	width: 440px;
+}
